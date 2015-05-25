@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg_blue"
+         >
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="更多" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:background="@color/background" >
+
+        <LinearLayout
+            android:background="@drawable/title_button"
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="8dp"
+           
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_more_exit"
+                android:background="@drawable/btn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出" />
+            
+             <Button
+                android:id="@+id/btn_more_update"
+                android:background="@drawable/btn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新" />
+             <Button
+                android:id="@+id/btn_more_about"
+                android:background="@drawable/btn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关于" />
+             
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:background="@drawable/title_button"
+            android:orientation="vertical"
+            >
+           <Button
+                android:id="@+id/btn_more_changeuser"
+                android:background="@drawable/btn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="切换账号" />
+              
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+set solib-search-path E:/NDK/android-ndk-r5c/samples/hello-jni/obj/local/armeabi
+directory E:/NDK/android-ndk-r5c/platforms/android-8/arch-arm/usr/include E:/NDK/android-ndk-r5c/samples/hello-jni/jni E:/NDK/android-ndk-r5c/sources/cxx-stl/system
